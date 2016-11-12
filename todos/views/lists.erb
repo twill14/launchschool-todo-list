@@ -3,7 +3,7 @@
    <li = class="<%=list_class(list)%>">
      <a>
        <p><%= remaining_todos_count(list)%> / <%= todos_count(list)%></p> 
-       <a href="/lists/<%= @lists.index(list)%>"><h2><%= list[:name] %></h2> </a>
+       <a href="/lists/<%= list[:id]%>"><h2><%= list[:name] %></h2> </a>
      </a>
   </li>
  <% end %>
