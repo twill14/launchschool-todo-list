@@ -10,8 +10,8 @@ configure do
 end
 
 configure(:development) do 
-  require_relative "database_persistance"
-  also_reload "database_persistance.rb"
+  require_relative "sequel_persistance"
+  also_reload "sequel_persistance.rb"
 end
 
 helpers do 
@@ -37,7 +37,7 @@ helpers do
 end
 
 before do
-  @storage = DatabasePersistance.new(logger)
+  @storage = SequelPersistance.new(logger)
 end
 
 def load_list(id)

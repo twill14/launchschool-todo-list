@@ -6,6 +6,8 @@ gem "erubis"
 
 gem "pg"
 
+gem "sequel"
+
 ruby "2.2.3"
 
 group :production do 
